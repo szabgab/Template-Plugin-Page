@@ -169,15 +169,6 @@ on the current page.
 
 =cut
 
-sub splice {
-  my $self = shift;
-  my @values = @{(shift)};
-
-  @values = splice(@values, $self->first - 1, $self->entries_per_page);
-
-  return @values;
-}
-
 
 =head1 AUTHOR
 
